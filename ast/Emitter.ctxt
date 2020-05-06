@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=outputFileName
+comment0.target=Emitter(java.lang.String)
+comment0.text=\n\ Constructor\ for\ class\ Emitter.\ Creates\ an\ emitter\ for\ writing\ to\ a\ new\ file\n\ with\ the\ given\ name.\n\ @param\ outputFileName\ \ \ \ \ \ \ \ name\ of\ the\ file\ to\ write\ code\ to\n
+comment1.params=code
+comment1.target=void\ emit(java.lang.String)
+comment1.text=\n\ Prints\ one\ line\ of\ code\ to\ file\ (with\ non-labels\ indented)\n\ @param\ code\ \ \ \ \ \ the\ line\ of\ code\ to\ print\ to\ the\ file\n
+comment2.params=
+comment2.target=void\ close()
+comment2.text=\n\ Closes\ the\ file.\ Close\ method\ should\ be\ called\ after\ all\ calls\ to\ emit.\n
+comment3.params=reg
+comment3.target=void\ emitPush(java.lang.String)
+comment3.text=\n\ Pushes\ the\ contents\ in\ the\ given\ register\ onto\ the\ stack\n\ @param\ reg\ \ \ \ \ \ \ the\ registers\ whose\ contents\ to\ push\ onto\ the\ stack.\n
+comment4.params=reg
+comment4.target=void\ emitPop(java.lang.String)
+comment4.text=\n\ Pops\ the\ top\ element\ of\ the\ stack\ into\ the\ given\ register.\n\ @param\ reg\ \ \ \ \ \ \ the\ register\ with\ which\ to\ store\ the\ element\ removed\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ from\ the\ top\ of\ the\ stack\n
+comment5.params=
+comment5.target=int\ nextLabelID()
+comment5.text=\n\ Tracks,\ returns,\ and\ increments\ the\ label\ ID,\ starting\ from\ 1,\ to\ keep\ all\ labels\ distinct\n\ @return\ \ \ \ \ \ the\ current\ label\ ID\n
+numComments=6

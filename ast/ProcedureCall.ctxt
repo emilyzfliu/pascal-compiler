@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n\ v
+comment0.target=ProcedureCall(java.lang.String,\ java.util.ArrayList)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ProcedureCall\n\ @param\ n\ \ \ \ \ the\ name\ of\ the\ procedure\n\ @param\ v\ \ \ \ \ the\ list\ of\ arguments\n
+comment1.params=e
+comment1.target=java.lang.Object\ eval(environment.Environment)
+comment1.text=\n\ Overrides\ eval\ method\ from\ abstract\ class\ Expression.\n\ Executes\ the\ procedure\ as\ defined\ by\ the\ procedure\ declaration\n\ stored\ in\ the\ parent\ environment\ e.\n\ \n\ @param\ \ e\ \ \ the\ parent\ environment\ in\ which\ to\ evaluate\ the\ procedure\n\ @return\ \ \ \ \ the\ return\ value\ of\ the\ procedure\n
+numComments=2

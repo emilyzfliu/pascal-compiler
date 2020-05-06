@@ -1,0 +1,45 @@
+PROCEDURE Mystery(x, y);
+BEGIN
+	x := x + y;
+	w := x + 1;
+	WRITELN(x);
+	WRITELN(w);
+	ignore := Mystery2();
+END;
+
+PROCEDURE Mystery2();
+BEGIN
+	y := 20;
+	ignore := Mystery3(y, x, 11);
+	WRITELN(y);
+	WRITELN(w);
+END;
+
+PROCEDURE Mystery3(w, r, t);
+BEGIN
+	WRITELN(x);
+	WRITELN(w);
+	WRITELN(r);
+	WRITELN(t);
+END;
+
+BEGIN
+	x := 2;
+	y := x + 3;
+	x := x + y;
+	WRITELN(x * y);
+	IF x > y THEN 
+	BEGIN
+		WRITELN(x);
+		WRITELN(y);
+		ignore := Mystery(x, y);
+	END;
+	WRITELN(x);
+	WRITELN(y);
+END;
+.
+.
+.
+
+
+.

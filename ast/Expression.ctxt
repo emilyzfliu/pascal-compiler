@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=java.lang.Object\ eval(environment.Environment)
+comment0.text=\n\ Abstract\ method\ eval\ accepts\ an\ environment\ as\ input\n\ and\ evaluates\ the\ expression\ to\ return\ an\ Object\n\ (which\ is\ either\ an\ Integer\ or\ a\ Boolean).\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ expression\n\ @return\ \ \ \ \ \ an\ Object\ which\ is\ either\ an\ Integer\ or\ Boolean\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ equivalent\ to\ the\ result\ of\ the\ simplified\ expression\n
+comment1.params=e
+comment1.target=void\ compile(Emitter)
+comment1.text=\n\ Compile\ method.\ Placeholder\ method\ to\ be\ overwritten\n\ in\ concrete\ sublcasses.\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file.\n
+numComments=2

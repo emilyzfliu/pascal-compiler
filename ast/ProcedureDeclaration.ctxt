@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=n\ st\ p
+comment0.target=ProcedureDeclaration(java.lang.String,\ Statement,\ java.util.ArrayList)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ProcedureDeclaration\n\ @param\ n\ \ \ \ \ the\ name\ of\ the\ procedure\n\ @param\ st\ \ \ \ the\ statement\ containing\ code\ within\ the\ procedure\n\ @param\ p\ \ \ \ \ the\ list\ of\ arguments\ for\ the\ procedure\n
+comment1.params=e
+comment1.target=void\ exec(environment.Environment)
+comment1.text=\n\ Overrides\ exec\ method\ from\ abstract\ class\ Statement.\n\ Stores\ the\ procedure\ declaration\ object\ within\ the\ parent\ environment.\n\ \n\ @param\ \ e\ \ \ the\ environment\ in\ which\ to\ execute\ the\ procedure\ declaration\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getParams()
+comment2.text=\n\ returns\ the\ parameters/arguments\ of\ the\ procedure\n\ @return\ \ \ \ \ \ the\ arguments\ of\ the\ procedure\n
+comment3.params=e
+comment3.target=void\ execStatement(environment.Environment)
+comment3.text=\n\ Executes\ the\ statement\ of\ the\ procedure\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ execute\ the\ statement\n
+numComments=4

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=r\ ex1\ ex2
+comment0.target=Condition(java.lang.String,\ Expression,\ Expression)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Condition\n\ @param\ r\ \ \ \ \ the\ relative\ operator,\ must\ be\ one\ of\ {<,\ >,\ \=,\ <>,\ <\=,\ >\=}\n\ @param\ ex1\ \ \ the\ first\ expression\ to\ be\ evaluated\n\ @param\ ex2\ \ \ the\ second\ expression\ to\ be\ evaluated\n
+comment1.params=e
+comment1.target=java.lang.Object\ eval(environment.Environment)
+comment1.text=\n\ Overrides\ eval\ method\ from\ abstract\ class\ Expression.\n\ Evaluates\ whether\ or\ not\ the\ condition\ is\ true\ and\n\ returns\ a\ Boolean\ object\ (either\ true\ or\ false)\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ conditional\n\ @return\ \ \ \ \ \ true\ if\ the\ condition\ is\ true\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ false\ otherwise\n
+comment2.params=e\ label
+comment2.target=void\ compile(Emitter,\ java.lang.String)
+comment2.text=\n\ Overrides\ compile\ method\ from\ abstract\ class\ Expression\n\ Compiles\ first\ operand,\ stores\ in\ temporary\ register,\ compiles\n\ second\ operand,\ compares\ the\ two\ operands\ and\ branches\ accordingly\n\ @param\ e\ \ \ \ \ \ \ \ \ the\ emitter\ used\ to\ write\ to\ the\ MIPS\ file\n\ @param\ label\ \ \ \ \ the\ name\ of\ the\ label\ in\ the\ MIPS\ file\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ that\ the\ code\ branches\ to\ if\ the\ condition\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\ satisfied\n
+numComments=3

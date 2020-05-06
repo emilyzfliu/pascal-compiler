@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=Writeln(Expression)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Writeln\n\ @param\ e\ \ \ \ \ the\ Expression\ to\ evaluate\ and\ print\n
+comment1.params=e
+comment1.target=void\ exec(environment.Environment)
+comment1.text=\n\ Overrides\ exec\ method\ in\ abstract\ class\ Statement.\n\ Prints\ the\ value\ of\ expression\ exp\n\ @param\ e\ \ \ \ \ \ \ \ \ the\ Environment\ in\ which\ to\ execute\ the\ writeln\ statement\n
+comment2.params=e
+comment2.target=void\ compile(Emitter)
+comment2.text=\n\ Overrides\ compile\ method\ in\ abstract\ class\ Statement\n\ Prints\ the\ compiled\ value\ of\ an\ expression\ exp,\n\ and\ then\ prints\ a\ new\ line\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file\n
+numComments=3

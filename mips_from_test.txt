@@ -1,0 +1,63 @@
+	.data
+	nl: .asciiz "\n"
+	#storing all variables
+	varcount: .word 0
+	.text
+	.globl main
+main:
+	#parsing statements from block
+	#load value into $v0
+	li $v0 1
+	#assigning value to variable varcount
+	sw $v0 varcount
+	#load variable value onto $v0
+	la $t0 varcount
+	lw $v0 ($t0)
+	move $t0 $v0
+	#load value into $v0
+	li $v0 15
+	#branching according to conditional
+	ble $t0 $v0 while0
+	j jwhile0
+while0:
+	#parsing statements from block
+	#load variable value onto $v0
+	la $t0 varcount
+	lw $v0 ($t0)
+	#load value in $v0 into $a0 and print
+	move $a0 $v0
+	li $v0 1
+	syscall
+	#print new line
+	li $v0 4
+	la $a0 nl
+	syscall
+	#load variable value onto $v0
+	la $t0 varcount
+	lw $v0 ($t0)
+	#push elements of $v0 onto stack
+	subu $sp $sp 4
+	sw $v0 ($sp)
+	#load value into $v0
+	li $v0 1
+	#pop top of stack onto $t0
+	lw $t0 ($sp)
+	addu $sp $sp 4
+	#perform binary operation
+	addu $v0 $t0 $v0
+	#assigning value to variable varcount
+	sw $v0 varcount
+	#statement block parsed
+	#load variable value onto $v0
+	la $t0 varcount
+	lw $v0 ($t0)
+	move $t0 $v0
+	#load value into $v0
+	li $v0 15
+	#branching according to conditional
+	ble $t0 $v0 while0
+jwhile0:
+	#statement block parsed
+	#normal termination
+	li $v0 10
+	syscall

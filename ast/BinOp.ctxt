@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=e1\ e2\ o
+comment0.target=BinOp(Expression,\ Expression,\ java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BinOp.\n\ @param\ e1\ \ \ \ \ \ \ \ The\ first\ expression\ to\ be\ evaluated\n\ @param\ e2\ \ \ \ \ \ \ \ The\ second\ expression\ to\ be\ evaluated\n\ @param\ o\ \ \ \ \ \ \ \ \ How\ the\ two\ expressions\ should\ be\ combined.\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Must\ be\ one\ of\ {+,\ -,\ *,\ /}\n
+comment1.params=e
+comment1.target=java.lang.Object\ eval(environment.Environment)
+comment1.text=\n\ Overrides\ method\ eval\ from\ Expression.\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ binary\ operation\n\ @return\ \ \ \ \ \ an\ Integer\ object\ containing\ the\ values\ of\ exp1\ and\ exp2,\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ either\ added,\ subtracted,\ multiplied,\ or\ divided\ together\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ according\ to\ op.\ If\ op\ is\ not\ one\ of\ {+,\ -,\ *,\ /},\ returns\ null.\n
+comment2.params=e
+comment2.target=void\ compile(Emitter)
+comment2.text=\n\ Overrides\ method\ compile\ from\ Expression.\n\ Pushes\ first\ element\ of\ binop\ onto\ stack\ and\ loads\n\ second\ element\ onto\ register,\ performs\ the\ operation\n\ and\ stores\ it\ in\ register\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ to\ the\ MIPS\ file\n
+numComments=3

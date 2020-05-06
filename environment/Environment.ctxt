@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=vars\ prs\ e
+comment0.target=Environment(java.util.HashMap,\ java.util.HashMap,\ Environment)
+comment0.text=\n\ Constructor\ for\ class\ Environment.\n\ @param\ vars\ \ \ \ \ \ \ \ \ \ the\ hashmap\ used\ to\ maintain\ the\ variable\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ names\ and\ values.\n\ @param\ prs\ \ \ \ \ \ \ \ \ \ \ the\ hashmap\ used\ to\ maintain\ the\ procedure\ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ names\ and\ declarations\n\ @param\ e\ \ \ \ \ \ \ \ \ \ \ \ \ the\ parent\ environment\n
+comment1.params=variable\ value
+comment1.target=void\ setVariable(java.lang.String,\ int)
+comment1.text=\n\ Stores\ a\ variable\ and\ its\ corresponding\ integer\ value\n\ into\ the\ hashmap.\n\ @param\ variable\ \ \ \ \ \ the\ name\ of\ the\ variable\ to\ be\ stored\n\ @param\ value\ \ \ \ \ \ \ \ \ the\ value\ of\ the\ variable\ to\ be\ stored\n
+comment2.params=variable
+comment2.target=int\ getVariable(java.lang.String)
+comment2.text=\n\ Retreives\ the\ value\ of\ a\ variable\ from\ the\ hashmap.\n\ @param\ variable\ \ \ \ \ \ the\ name\ of\ the\ variable\ to\ retrieve\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ value\ for\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ value\ of\ the\ given\ variable\n
+comment3.params=pr
+comment3.target=ast.ProcedureDeclaration\ getProcedure(java.lang.String)
+comment3.text=\n\ Retreives\ a\ procedure\ declaration\ from\ the\ hashmap.\n\ @param\ pr\ \ \ \ \ \ \ \ the\ name\ of\ the\ procedure\ to\ retrieve\n\ @return\ \ \ \ \ \ \ \ \ \ the\ procedure\ declaration\ with\ the\ given\ name\n
+comment4.params=p\ s
+comment4.target=void\ setProcedure(java.lang.String,\ ast.ProcedureDeclaration)
+comment4.text=\n\ Stores\ a\ procedure\ name\ and\ its\ corresponding\ declaration\n\ in\ the\ hashmap\n\ @param\ p\ \ \ \ \ \ \ \ \ the\ name\ of\ the\ procedure\n\ @param\ s\ \ \ \ \ \ \ \ \ the\ procedure\ declaration\n
+comment5.params=
+comment5.target=java.util.Set\ getVariables()
+comment5.text=\n\ Returns\ a\ set\ containing\ all\ variable\ names\ in\ the\ environment\n\ @return\ \ a\ set\ containing\ all\ variable\ names\ in\ the\ environment\n
+comment6.params=
+comment6.target=java.util.Set\ getProcedures()
+comment6.text=\n\ Returns\ a\ set\ containing\ all\ procedure\ names\ in\ the\ environment\n\ @return\ \ a\ set\ containing\ all\ procedure\ names\ in\ the\ environment\n
+comment7.params=
+comment7.target=Environment\ getParent()
+comment7.text=\n\ Returns\ the\ parent\ environment\ of\ the\ current\ environment.\ If\ the\ \n\ parent\ is\ null\ (the\ current\ environment\ is\ global),\ returns\n\ the\ current\ environment.\n\ @return\ \ \ \ \ \ the\ parent\ environment,\ or\ this\ if\ parent\ is\ null\n
+numComments=8

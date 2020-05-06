@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ exec(environment.Environment)
+comment0.text=\n\ Abstract\ method\ exec\ accepts\ an\ environment\ as\ input\n\ and\ executes\ the\ statement\ in\ the\ given\ environment\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ execute\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ statement\n
+comment1.params=e
+comment1.target=void\ compile(Emitter)
+comment1.text=\n\ Compile\ method.\ Placeholder\ method\ to\ be\ overwritten\n\ in\ concrete\ sublcasses.\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file.\n
+numComments=2

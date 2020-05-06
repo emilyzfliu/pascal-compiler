@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\n\ Main\ method\ for\ testing\ class\ Scanner.\ Reads\ the\ contents\ of\ a\ file\n\ into\ an\ InputStream\ objects\ and\ prints\ them\ out,\ one\ per\ line.\n\ @param\ args\ \ \ \ \ \ \ \ \ \ arguments\ of\ input\ strings\n
+numComments=1

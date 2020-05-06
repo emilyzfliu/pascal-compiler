@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=st\ v\ p
+comment0.target=Program(Statement,\ java.util.ArrayList,\ java.util.ArrayList)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Program\n\ @param\ st\ \ \ \ \ \ \ \ the\ main\ statement\ of\ the\ program\n\ @param\ v\ \ \ \ \ \ \ \ \ the\ list\ of\ variables\ for\ the\ program\n\ @param\ p\ \ \ \ \ \ \ \ \ the\ list\ of\ procedures\ for\ the\ program\n
+comment1.params=e
+comment1.target=void\ exec(environment.Environment)
+comment1.text=\n\ Runs\ the\ entire\ program.\n\ \n\ @param\ e\ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ program\n
+comment2.params=fileName
+comment2.target=void\ compile(java.lang.String)
+comment2.text=\n\ Sets\ up\ .data,\ .text,\ and\ the\ main\ (global)\ method\ in\ the\ MIPS\ assembly\ file,\n\ as\ well\ as\ executing\ normal\ termination.\n\ @param\ fileName\ \ \ \ \ \ the\ name\ of\ the\ output\ file\ which\ contains\ the\ MIPS\ instructions\n
+numComments=3

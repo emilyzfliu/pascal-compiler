@@ -1,0 +1,14 @@
+PROCEDURE print(n);
+   WRITELN(n);
+PROCEDURE max(x, y);
+   BEGIN
+     max := x;
+     IF y > x THEN max := y;
+   END;
+BEGIN
+    n := 3;
+    ignore := print(5);
+    WRITELN(n);
+    WRITELN(max(3, 5));
+END;
+.

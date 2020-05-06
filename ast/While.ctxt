@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=cond\ st
+comment0.target=While(Condition,\ Statement)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ While.\n\ @param\ cond\ \ \ \ \ \ the\ condition\ to\ be\ satisfied\n\ @param\ st\ \ \ \ \ \ \ \ the\ statement\ to\ execute\n
+comment1.params=e
+comment1.target=void\ exec(environment.Environment)
+comment1.text=\n\ Overrides\ exec\ method\ in\ abstract\ class\ Statement.\ While\ c\ is\ true,\n\ execute\ the\ statements\ contained\ in\ s.\n\ @param\ e\ \ \ \ \ \ \ \ \ the\ Environment\ in\ which\ to\ execute\ the\ while\ loop\n
+comment2.params=e
+comment2.target=void\ compile(Emitter)
+comment2.text=\n\ Overrides\ compile\ method\ in\ abstract\ class\ Statement.\ Sets\ up\ a\ while\n\ label\ with\ the\ compiled\ statement\ if\ the\ statement\ is\ true.\ Continues\n\ to\ loop\ through\ the\ program\ until\ the\ statement\ is\ no\ longer\ true.\ If\n\ the\ statement\ is\ never\ true,\ jumps\ to\ the\ code\ after\ the\ loop.\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file\n
+numComments=3

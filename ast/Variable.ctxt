@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=Variable(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Variable\n\ @param\ n\ \ \ \ \ the\ name\ of\ the\ variable\n
+comment1.params=e
+comment1.target=java.lang.Object\ eval(environment.Environment)
+comment1.text=\n\ Overrides\ eval\ method\ from\ abstract\ class\ Expression.\n\ Returns\ the\ name\ of\ the\ variable\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ variable\n\ @return\ \ \ \ \ \ the\ name\ of\ the\ variable\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ Gets\ the\ name\ of\ the\ variable.\n\ @return\ \ \ \ \ \ the\ name\ of\ the\ variable\n
+comment3.params=e
+comment3.target=void\ compile(Emitter)
+comment3.text=\n\ Overrides\ compile\ method\ from\ abstract\ class\ Expression.\n\ Loads\ the\ value\ of\ the\ variable\ onto\ the\ $v0\ register\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file\n
+numComments=4

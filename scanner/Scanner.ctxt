@@ -1,0 +1,44 @@
+#BlueJ class context
+comment0.params=inStream
+comment0.target=Scanner(java.io.InputStream)
+comment0.text=\n\ Scanner\ constructor\ for\ construction\ of\ a\ scanner\ that\ \n\ uses\ an\ InputStream\ object\ for\ input.\ \ \n\ Usage\:\ \n\ FileInputStream\ inStream\ \=\ new\ FileInputStream(new\ File(<file\ name>);\n\ Scanner\ lex\ \=\ new\ Scanner(inStream);\n\ @param\ inStream\ the\ input\ stream\ to\ use\n
+comment1.params=inString
+comment1.target=Scanner(java.lang.String)
+comment1.text=\n\ Scanner\ constructor\ for\ constructing\ a\ scanner\ that\ \n\ scans\ a\ given\ input\ string.\ \ It\ sets\ the\ end-of-file\ flag\ an\ then\ reads\n\ the\ first\ character\ of\ the\ input\ string\ into\ the\ instance\ field\ currentChar.\n\ Usage\:\ Scanner\ lex\ \=\ new\ Scanner(input_string);\n\ @param\ inString\ the\ string\ to\ scan\n
+comment10.params=
+comment10.target=java.lang.String\ scanOperand()
+comment10.text=\n\ Tokenizes\ the\ next\ character\ of\ the\ input\ as\ an\ operand\ of\n\ the\ type\ {+,\ -,\ \=,\ *,\ /,\ %,\ (,\ ),\ <,\ >,\ \:,\ ;,\ .}.\n\ If\ the\ next\ charater\ is\ not\ an\ operand,\ throws\ an\ exception.\n\ @precondition\ \ \ \ the\ next\ character\ is\ an\ operand\ of\ the\n\ type\ {+,\ -,\ \=,\ *,\ /,\ %,\ (,\ ),\ <,\ >,\ \:,\ ;,\ .}.\n\ @return\ \ \ \ \ \ A\ String\ containing\ the\ next\ character,\ if\ the\ next\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ character\ is\ an\ operand\n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ on\ illegal\ character\ or\ when\ current\ character\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ does\ not\ match\ next\ in\ stream\n
+comment11.params=
+comment11.target=void\ skipLineComment()
+comment11.text=\n\ Advances\ the\ current\ character,\ starting\ with\ a\ line\ comment\n\ ('//')\ until\ the\ end\ of\ the\ line\ is\ reached.\n\ Throws\ an\ exception\ if\ the\ current\ character\ does\ not\ match\ the\ character\ eaten\ by\ input.\n\ @precondition\ \ \ \ \ \ \ \ current\ character\ is\ the\ second\ slash\ of\ the\ line\ comment\n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ when\ current\ character\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ does\ not\ match\ next\ in\ stream\n
+comment12.params=
+comment12.target=java.lang.String\ nextToken()
+comment12.text=\n\ Method\ nextToken\ skips\ all\ white\ spaces\ and\ gets\ the\ next\ complete\ number,\ operand,\n\ or\ identifier\ (variable\ name)\ from\ the\ input\ stream.\ nextToken\ skips\ past\ all\ line\ comments\n\ nextToken\ will\ throw\ an\ exception\ if\ the\ input\ character\ is\ not\ recognized\n\ (it\ is\ not\ a\ digit,\ letter,\ white\ space,\ or\ operand).\ If\ the\ end\ of\ the\ file\ has\n\ been\ reached,\ returns\ a\ period.\n\ \n\ @return\ \ \ \ \ \ a\ String\ object\ containing\ the\ next\ number,\ operand,\ or\ identifier.\n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ on\ illegal\ character\ or\ when\ current\ character\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ does\ not\ match\ next\ in\ stream\n
+comment13.params=
+comment13.target=boolean\ hasNext()
+comment13.text=\n\ Evaluates\ whether\ or\ not\ the\ end\ of\ the\ input\ stream\ has\ been\ reached\n\ @return\ true\ if\ there\ are\ more\ characters\ to\ be\ read\n\ \ \ \ \ \ \ \ \ \ false\ if\ the\ end\ of\ the\ input\ stream\ has\ been\ reached\n
+comment2.params=
+comment2.target=void\ getNextChar()
+comment2.text=\n\ Method\ getNextChar\ reads\ the\ next\ character\ in\ the\ input\ stream\ of\ characters\ and\ sets\ the\n\ currentChar\ variable\ to\ the\ char\ read\ by\ the\ input\ reader.\n
+comment3.params=expected
+comment3.target=void\ eat(char)
+comment3.text=\n\ Method\ eat\ uses\ the\ getNextChar\ helper\ method\ to\ advance\ the\ current\ character.\ eat\ compares\n\ the\ current\ character\ to\ the\ expected\ character\ and\ throws\ an\ exception\ if\ they\ do\ not\ match.\n\ @param\ expected\ \ \ \ \ \ the\ expected\ current\ character,\ which\ should\ match\ with\ the\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\ character\ in\ the\ input\ stream\n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ on\ illegal\ character\n
+comment4.params=c
+comment4.target=boolean\ isLetter(char)
+comment4.text=\n\ Evaluates\ whether\ or\ not\ the\ input\ character\ is\ a\ letter\ of\ the\ phonetic\ alphabet,\n\ a-z\ or\ A-Z.\n\ @param\ \ \ c\ \ \ the\ character\ to\ be\ evaluated\n\ @return\ true\ if\ c\ is\ a\ letter\n\ \ \ \ \ \ \ \ \ \ false\ \ \ if\ c\ is\ not\ a\ letter\n
+comment5.params=c
+comment5.target=boolean\ isDigit(char)
+comment5.text=\n\ Evaluates\ whether\ or\ not\ the\ input\ character\ is\ a\ numerical\ digit,\ 0-9.\n\ @param\ \ \ c\ \ \ the\ character\ to\ be\ evaluated\n\ @return\ true\ if\ c\ is\ a\ digit\n\ \ \ \ \ \ \ \ \ \ false\ \ \ if\ c\ is\ not\ a\ digit\n
+comment6.params=c
+comment6.target=boolean\ isWhiteSpace(char)
+comment6.text=\n\ Evaluates\ whether\ or\ not\ the\ input\ character\ is\ a\ space,\ tab,\ or\ new\ line\n\ @param\ \ \ c\ \ \ the\ character\ to\ be\ evaluated\n\ @return\ true\ if\ c\ is\ a\ space,\ tab,\ or\ new\ line\n\ \ \ \ \ \ \ \ \ \ false\ \ \ otherwise\n
+comment7.params=
+comment7.target=java.lang.String\ scanNumber()
+comment7.text=\n\ Tokenizes\ the\ next\ lexeme\ of\ the\ input\ as\ a\ number.\n\ Reads\ until\ the\ end\ of\ the\ numerical\ lexeme\ that\ starts\ with\ the\ current\ char.\n\ @precondition\ \ \ \ current\ character\ is\ a\ digit\n\ @return\ \ \ \ \ \ A\ String\ containing\ a\ number\ lexeme\ with\ all\ characters\ as\ digits\ (0-9).\n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ when\ current\ character\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ does\ not\ match\ next\ in\ stream\n
+comment8.params=
+comment8.target=java.lang.String\ scanIdentifier()
+comment8.text=\n\ Tokenizes\ the\ next\ lexeme\ of\ the\ input\ as\ an\ identifier.\n\ Reads\ until\ the\ end\ of\ the\ lexeme\ that\ starts\ with\ the\ current\ char.\n\ @precondition\ \ \ \ current\ character\ is\ a\ letter\n\ @return\ \ \ \ \ \ A\ String\ containing\ an\ identifier\ lexeme\ with\ a\ letter\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ as\ the\ first\ character,\ and\ all\ following\ characters\ are\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ alphanumeric\ symbols\ (a-z,\ A-Z,\ 0-9).\n\ \n\ @exception\ \ \ \ \ \ \ \ \ \ \ ScanErrorException\ when\ current\ character\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ does\ not\ match\ next\ in\ stream\n
+comment9.params=c
+comment9.target=boolean\ isOperand(char)
+comment9.text=\n\ Evaluates\ whether\ or\ not\ the\ input\ character\ is\ an\ operand\ of\ the\n\ type\ {+,\ -,\ \=,\ *,\ /,\ %,\ (,\ ),\ <,\ >,\ \:,\ ;,\ .}.\n\ @param\ \ \ c\ \ \ the\ character\ to\ be\ evaluated\n\ @return\ true\ if\ c\ is\ an\ operand\ of\ the\ type\ {+,\ -,\ \=,\ *,\ /,\ %,\ (,\ ),\ <,\ >,\ \:,\ ;,\ .}.\n\ \ \ \ \ \ \ \ \ \ false\ \ \ otherwise\n
+numComments=14

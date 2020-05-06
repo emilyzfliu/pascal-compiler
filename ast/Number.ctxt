@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=v
+comment0.target=Number(int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Number\n\ @param\ v\ \ \ \ \ the\ value\ to\ be\ stored\n
+comment1.params=e
+comment1.target=java.lang.Object\ eval(environment.Environment)
+comment1.text=\n\ Overrides\ eval\ method\ from\ abstract\ class\ Expression.\n\ Returns\ the\ number\ stored\ in\ the\ class\n\ @param\ e\ \ \ \ \ the\ environment\ in\ which\ to\ evaluate\ the\ number\n\ @return\ \ \ \ \ \ the\ value\ of\ the\ number\n
+comment2.params=e
+comment2.target=void\ compile(Emitter)
+comment2.text=\n\ Overrides\ compile\ method\ from\ abstract\ class\ Expression.\n\ Stores\ number\ into\ the\ register.\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file.\n
+numComments=3

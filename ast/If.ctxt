@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=c\ st1
+comment0.target=If(Condition,\ Statement)
+comment0.text=\n\ Constructor\ for\ class\ if,\ for\ IF/THEN\ statements\n\ @param\ c\ \ \ \ \ the\ condition\ to\ be\ evaluated\n\ @param\ st1\ \ \ the\ statement\ to\ be\ executed\ if\ c\ is\ satisfied\n
+comment1.params=c\ st1\ st2
+comment1.target=If(Condition,\ Statement,\ Statement)
+comment1.text=\n\ Constructor\ for\ class\ if,\ for\ IF/THEN/ELSE\ statements\n\ @param\ c\ \ \ \ \ the\ condition\ to\ be\ evaluated\n\ @param\ st1\ \ \ the\ statement\ to\ be\ executed\ if\ c\ is\ satisfied\n\ @param\ st2\ \ \ the\ statement\ to\ be\ executed\ if\ c\ is\ not\ satisfied\n
+comment2.params=e
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\n\ Overrides\ exec\ method\ in\ abstract\ class\ Statement.\ If\ c\ is\ true,\n\ execute\ s1,\ if\ c\ is\ false\ and\ s2\ exists,\ execute\ s2\ (and\ do\ nothing\n\ if\ s2\ does\ not\ exist)\n\ @param\ e\ \ \ \ \ \ \ \ \ the\ Environment\ in\ which\ to\ execute\ the\ if\ statement\n
+comment3.params=e
+comment3.target=void\ compile(Emitter)
+comment3.text=\n\ Overrides\ compile\ method\ in\ abstract\ class\ Statement.\ Sets\ up\ a\ branch\n\ label\ containing\ the\ compiled\ statement\ if\ the\ condition\ is\ satisfied;\n\ otherwise,\ jumps\ to\ directly\ after\ the\ label\ with\ the\ statement.\n\ @param\ e\ \ \ \ \ the\ emitter\ used\ to\ write\ code\ to\ the\ MIPS\ file.\n
+numComments=4
